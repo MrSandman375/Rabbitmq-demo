@@ -1,0 +1,16 @@
+server:
+  port: 8883
+spring:
+  application:
+    name: rabbitmq-demo
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    connection-timeout: 5000
+    # 确认消息已经发送到交换机
+    publisher-confirm-type: correlated
+    # 确认消息已经发送到队列
+    publisher-returns: true
