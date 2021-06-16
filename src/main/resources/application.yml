@@ -8,9 +8,9 @@ spring:
     port: 5672
     username: guest
     password: guest
-    virtual-host: /
+    # è¿æ¥è¶…æ—¶
     connection-timeout: 5000
-    # È·ÈÏÏûÏ¢ÒÑ¾­·¢ËÍµ½½»»»»ú
+    # ç¡®è®¤æ¶ˆæ¯å·²ç»å‘é€åˆ°äº¤æ¢æœº
     publisher-confirm-type: correlated
-    # È·ÈÏÏûÏ¢ÒÑ¾­·¢ËÍµ½¶ÓÁĞ
+    # ç¡®è®¤æ¶ˆæ¯å·²ç»å‘é€åˆ°é˜Ÿåˆ—
     publisher-returns: true
