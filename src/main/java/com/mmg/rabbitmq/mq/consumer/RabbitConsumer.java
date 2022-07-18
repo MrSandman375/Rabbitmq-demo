@@ -25,10 +25,10 @@ public class RabbitConsumer {
      *
      * @param testMessage
      */
-//    @RabbitListener(queues = "TestDirectQueue") //坚挺消息队列 TestDirectQueue，也可以是多个队列（数组形式）
-//    public void process(Map<String, Object> testMessage) {
-//        System.out.println("消费者收到到的消息：" + testMessage.toString());
-//    }
+    @RabbitListener(queues = "TestDirectQueue") //坚挺消息队列 TestDirectQueue，也可以是多个队列（数组形式）
+    public void process(Map<String, Object> testMessage) {
+        System.out.println("消费者收到到的消息：" + testMessage.toString());
+    }
 
     /**
      * topic交换机消费者
